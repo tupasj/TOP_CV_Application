@@ -1,0 +1,30 @@
+.app {
+  width: 55%;
+  margin: 32px auto;
+}
+
+.divider {
+  background-color: black;
+  height: 2px;
+}
+
+/* Section */
+section {
+  margin-top: 25px;
+}
+
+.first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
