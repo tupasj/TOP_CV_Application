@@ -12,7 +12,7 @@ class Buttons extends Component {
   EditBtn = () => {
     const toggleState = () => {
       this.setState({
-        editing: true
+        editing: true //change parent state
       })
     };
 
@@ -22,7 +22,7 @@ class Buttons extends Component {
   SubmitBtn = () => {
     const toggleState = () => {
       this.setState({
-        editing: false
+        editing: false //change parent state
       })
     };
 

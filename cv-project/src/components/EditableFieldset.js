@@ -5,6 +5,7 @@ class EditableFieldset extends Component {
     event.preventDefault();
     //Return an array with the new text values, which is passed as a prop
     //to the render component that uses those values
+    //Change parent state to not editing
   };
 
   render() {
