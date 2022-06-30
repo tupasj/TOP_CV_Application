@@ -8,11 +8,14 @@
   height: 2px;
 }
 
+<<<<<<< HEAD
 .lists-container {
   display: flex;
   justify-content: space-around;
 }
 
+=======
+>>>>>>> aa5b5edb2dcf28157749d2317401b19b5222a44b
 /* Section */
 section {
   margin-top: 25px;
@@ -33,6 +36,7 @@ h2 {
   font-size: 1.5rem;
   margin: 0;
 }
+<<<<<<< HEAD
 
 /* Form */
 input {
@@ -40,3 +44,5 @@ input {
   margin-top: 4px;
   margin-bottom: 4px;
 }
+=======
+>>>>>>> aa5b5edb2dcf28157749d2317401b19b5222a44b
