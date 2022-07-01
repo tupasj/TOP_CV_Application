@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Section from "./components/Section";
+import PersonalInfo from "./components/PersonalInfo";
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <Section />
+        <PersonalInfo />
         <section>
           <div className="first-line">
             <h2>Skills</h2>
