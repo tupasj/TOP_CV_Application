@@ -43,6 +43,11 @@ input {
 }
 
 /* Skills */
+.skills-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .hidden {
   list-style: none;
 }
