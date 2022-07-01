@@ -25,20 +25,24 @@ h2 {
   float: right;
 }
 
-/* Personal info */
-.fieldset > .field:nth-child(2) {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.fieldset > .field:nth-child(3) {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-/* Form */
 input {
   display: block;
   margin-top: 4px;
   margin-bottom: 4px;
+}
+
+/* Personal info */
+.personal-info > .fieldset > .field:nth-child(2) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.personal-info > .fieldset > .field:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Skills */
+.hidden {
+  list-style: none;
 }
