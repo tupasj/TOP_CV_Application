@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class EditableFieldset extends Component {
+class PersonalInfoEditableContents extends Component {
   render() {
     const keyValues = this.props.keyValues;
     const onFieldEditMethods = this.props.onFieldEditMethods;
@@ -24,4 +24,4 @@ class EditableFieldset extends Component {
   }
 }
 
-export default EditableFieldset;
+export default PersonalInfoEditableContents;

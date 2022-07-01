@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Fieldset from "./Fieldset";
-import EditableFieldset from "./EditableFieldset";
+import PersonalInfoContents from "./PersonalInfoContents";
+import PersonalInfoEditableContents from "./PersonalInfoEditableContents";
 
 class Section extends Component {
   constructor(props) {
@@ -82,14 +82,14 @@ class Section extends Component {
     return (
       <section className="personal-info">
         {editing ? (
-          <EditableFieldset
+          <PersonalInfoEditableContents
             keyValues={keyValues}
             textContents={textContents}
             onEditFinish={this.onEditFinish}
             onFieldEditMethods={onFieldEditMethods}
           />
         ) : (
-          <Fieldset
+          <PersonalInfoContents
             keyValues={keyValues}
             textContents={textContents}
             onEditStart={this.onEditStart}
