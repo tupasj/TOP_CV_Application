@@ -1,20 +1,24 @@
 import React, { Component } from "react";
 
 class EditableFieldset extends Component {
-  handleSubmit = (event) => {
-    event.preventDefault();
-    //Return an array with the new text values, which is passed as a prop
-    //to the render component that uses those values
-    //Change parent state to not editing
-  };
-
   render() {
+    const keyValues = this.props.keyValues;
+    const onFieldEditMethods = this.props.onFieldEditMethods;
+    const inputs = this.props.textContents.map((text, index) => (
+      <input
+        key={keyValues[index]}
+        value={text}
+        onChange={onFieldEditMethods[index]}
+      ></input>
+    ));
+    const onEditFinish = this.props.onEditFinish;
+
     return (
-      <form className="editable-fieldset" onSubmit={this.handleSubmit}>
-        <input type="text"></input>
-        <input type="text"></input>
-        <input type="text"></input>
-        <button type="submit">Submit</button>
+      <form className="editable-fieldset">
+          <button className="edit-btn" onClick={onEditFinish}>
+            Finish editing
+          </button>
+        {inputs}
       </form>
     );
   }

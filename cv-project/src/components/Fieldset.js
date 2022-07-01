@@ -2,12 +2,15 @@ import React, { Component } from "react";
 
 class Fieldset extends Component {
   render() {
-    const fields = this.props.textContents.map((text) => (
-      <div key={text} className="field">{text}</div>
+    const keyValues = this.props.keyValues;
+    const fields = this.props.textContents.map((text, index) => (
+      <div key={keyValues[index]} className="field">{text}</div>
     ));
+    const onEditStart = this.props.onEditStart;
 
     return (
       <div className="fieldset">
+        <button className="edit-btn" onClick={onEditStart}>Edit</button>
         {fields}
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import DefaultFieldset from "./Fieldset";
-import EditableFieldset from "./EditableFieldset";
+import DefaultFieldset from "../Fieldset";
+import EditableFieldset from "../EditableFieldset";
 
 class Fieldsets extends Component {
     constructor(props) {
