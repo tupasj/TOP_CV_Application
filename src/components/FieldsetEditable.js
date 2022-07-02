@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 class FieldsetEditable extends Component {
   render() {
-    const editing = this.props.editing;
     const keyValues = this.props.keyValues;
     const onSkillEdit = this.props.onSkillEdit;
     const inputs = this.props.textContents.map((text, index) => (
@@ -15,7 +14,6 @@ class FieldsetEditable extends Component {
 
     return (
       <form className="fieldset-editable">
-        {console.log(editing)}
         {inputs}
       </form>
     );

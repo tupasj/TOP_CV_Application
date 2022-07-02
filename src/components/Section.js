@@ -37,6 +37,9 @@ class Section extends Component {
         <div className="divider"></div>
         <div className="skills-container">
             <SkillColumn editing={editing}></SkillColumn>
+            <SkillColumn editing={editing}></SkillColumn>
+            <SkillColumn editing={editing}></SkillColumn>
+            <SkillColumn editing={editing}></SkillColumn>
         </div>
       </section>
     );
