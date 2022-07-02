@@ -7,18 +7,8 @@ class App extends Component {
     return (
       <div className="app">
         <PersonalInfo />
-        <Section title="Skills" />
-        <section>
-          <div className="first-line">
-            <h2>Work Experience</h2>
-            <button>Edit</button>
-          </div>
-          <div className="divider"></div>
-          <div className="field">Company</div>
-          <div className="field">Position title</div>
-          <div className="field">Main tasks</div>
-          <div className="field">Date range</div>
-        </section>
+        <Section title="Skills" type="list" quantity="4" />
+        <Section title="Work-experience" type="div" quantity="1"/>
         <section>
           <div className="first-line">
             <h2>Education</h2>
