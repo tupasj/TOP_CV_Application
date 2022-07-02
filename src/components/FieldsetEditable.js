@@ -2,18 +2,20 @@ import React, { Component } from "react";
 
 class FieldsetEditable extends Component {
   render() {
+    const editing = this.props.editing;
     const keyValues = this.props.keyValues;
-    const onFieldEditMethods = this.props.onFieldEditMethods;
+    const onSkillEdit = this.props.onSkillEdit;
     const inputs = this.props.textContents.map((text, index) => (
       <input
         key={keyValues[index]}
         value={text}
-        onChange={onFieldEditMethods[index]}
+        onChange={onSkillEdit}
       ></input>
     ));
 
     return (
       <form className="fieldset-editable">
+        {console.log(editing)}
         {inputs}
       </form>
     );

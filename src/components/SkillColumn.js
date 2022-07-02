@@ -7,34 +7,48 @@ class SkillColumn extends Component {
     super(props);
 
     this.state = {
-      editing: props.editing,
-      skills: ['Skills column', 'b', 'C', 'd']
+      skills: ["Skills column", "b", "C", "d"],
     };
 
     this.onSkillEdit = this.onSkillEdit.bind(this);
   }
 
-  onSkillEdit(input, index) {
+  // onSkillEdit = (i) => {
+  //   this.setState((state) => {
+  //     const updatedArray = state.skills.map((skill, j) => {
+  //       if (j === i) {
+  //         return skill.target.value;
+  //       } else {
+  //         return skill;
+  //       }
+  //     });
+
+  //     return {
+  //       updatedArray,
+  //     };
+  //   });
+  // };
+
+  onSkillEdit(input) {
     this.setState({
-      skills: [index].input.target.value,
+      skills: input.target.value,
     });
   }
 
   render() {
-    const { editing } = this.state;
+    const editing = this.props.editing;
     const { skills } = this.state;
     const keyValues = ["1", "2", "3", "4"];
 
     return editing ? (
       <FieldsetEditable
+        editing={editing}
         keyValues={keyValues}
         textContents={skills}
+        onSkillEdit={this.onSkillEdit}
       />
     ) : (
-      <Fieldset
-        keyValues={keyValues}
-        textContents={skills}
-      />
+      <Fieldset editing={editing} keyValues={keyValues} textContents={skills} />
     );
   }
 }
