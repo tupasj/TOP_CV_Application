@@ -7,31 +7,18 @@ class SkillColumn extends Component {
     super(props);
 
     this.state = {
-      skills: ["Skills column", "b", "C", "d"],
+      skills: ["Skill 1", "Skill 2", "Skill 3", "Skill 4"],
     };
 
     this.onSkillEdit = this.onSkillEdit.bind(this);
   }
 
-  // onSkillEdit = (i) => {
-  //   this.setState((state) => {
-  //     const updatedArray = state.skills.map((skill, j) => {
-  //       if (j === i) {
-  //         return skill.target.value;
-  //       } else {
-  //         return skill;
-  //       }
-  //     });
+  onSkillEdit(input, index) {
+    const skillsArray = this.state.skills;
+    const currentElement = skillsArray[index];
 
-  //     return {
-  //       updatedArray,
-  //     };
-  //   });
-  // };
-
-  onSkillEdit(input) {
     this.setState({
-      skills: input.target.value,
+      currentElement: input.target.value,
     });
   }
 
