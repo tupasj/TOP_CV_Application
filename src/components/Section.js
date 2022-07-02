@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Contents from "./Contents";
-import SkillColumn from "./SkillColumn";
 import lowercaseFirstLetter from "./utility/lowercaseFirstLetter";
 
 class Section extends Component {
