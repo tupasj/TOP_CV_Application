@@ -6,7 +6,7 @@ const App2 = () => {
   return (
     <div className="app">
       <PersonalInfo />
-      <Section2 title="skills" />
+      <Section2 title="skills" type="list" elementQuantity="4" />
     </div>
   );
 };

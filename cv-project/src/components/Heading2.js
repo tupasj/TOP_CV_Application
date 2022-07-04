@@ -6,7 +6,7 @@ const Heading2 = (props) => {
     const toggleEditing = props.onClick;
 
   return (
-    <div>
+    <div className={`${title}-heading`}>
       {editing ? (
         <button className="edit-btn" onClick={toggleEditing}>
           Finish editing
