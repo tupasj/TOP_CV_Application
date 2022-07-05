@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import PersonalInfo from "./components/PersonalInfo";
-import Section from "./components/Section";
+import PersonalInfo from "../PersonalInfo";
+import Section from "./Section";
 
 class App extends Component {
   render() {

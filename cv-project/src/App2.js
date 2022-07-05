@@ -7,6 +7,8 @@ const App2 = () => {
     <div className="app">
       <PersonalInfo />
       <Section2 title="skills" type="list" elementQuantity="4" />
+      <Section2 title="work-experience" elementQuantity="1" />
+      <Section2 title="education" elementQuantity="1" />
     </div>
   );
 };

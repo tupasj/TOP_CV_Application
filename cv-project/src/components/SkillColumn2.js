@@ -3,7 +3,7 @@ import FieldsetEditable2 from "./FieldsetEditable2";
 import Fieldset2 from "./Fieldset2";
 
 const SkillColumn2 = (props) => {
-  const editing = props.editing;
+  const { editing, type } = props;
   const keyValues = ["1", "2", "3", "4"];
 
   const [contentsText, setContentsText] = useState([
@@ -14,8 +14,8 @@ const SkillColumn2 = (props) => {
   ]);
   const handleChange = (e) => {
     // setContentsText(e.target.value);
-  }
-  
+  };
+
   return editing ? (
     <FieldsetEditable2
       editing={editing}
@@ -24,11 +24,7 @@ const SkillColumn2 = (props) => {
       onSkillEdit={handleChange}
     />
   ) : (
-    <Fieldset2
-      editing={editing}
-      keyValues={keyValues}
-      contentsText={contentsText}
-    />
+    <Fieldset2 keyValues={keyValues} contentsText={contentsText} type={type} />
   );
 };
 

@@ -30,6 +30,7 @@ const Section = (props) => {
         className={`${title}-contents`}
         type={type}
         quantity={quantity}
+        title={title}
       />
     </section>
   );

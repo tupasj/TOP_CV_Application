@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Contents from "./Contents";
-import lowercaseFirstLetter from "./utility/lowercaseFirstLetter";
+import lowercaseFirstLetter from "../utility/lowercaseFirstLetter";
 
 class Section extends Component {
   constructor(props) {
